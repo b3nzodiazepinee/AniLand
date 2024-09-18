@@ -1,0 +1,57 @@
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+
+    &__row {
+        height: 60px;
+        width: 1280px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+
+        &__part {
+            display: flex;
+            text-align: center;
+            align-items: center;
+
+            h1 {
+                font-size: 24px;
+                font-weight: 700;
+                letter-spacing: 1.2px;
+            }
+
+            nav {
+                padding-left: 50px;
+
+                ul {
+                    display: flex;
+                    column-gap: 25px;
+                    align-items: center;
+
+                    li a {
+                        color: #cfcbcb;
+                        transition: 0.2s linear;
+                        font-size: 16px;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #ffffff;
+                        }
+                    }
+                    .active {
+                        color: #ffffff !important;
+                        text-decoration: underline;
+                        text-underline-offset: 4px;
+                    }
+                }
+            }
+
+            &__buttons {
+                display: inherit;
+                gap: 15px;
+            }
+        }
+    }
+}

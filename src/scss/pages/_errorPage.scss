@@ -1,0 +1,29 @@
+.errorPage {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    h1 {
+        font-size: 72px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        padding-top: 20px;
+        font-size: 16px;
+        transition: $duration linear;
+
+        &:hover{
+            color: $white-hover;;
+        }
+    }
+}

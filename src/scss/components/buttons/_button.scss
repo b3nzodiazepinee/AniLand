@@ -1,0 +1,25 @@
+.btn {
+    font-weight:500;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s linear;
+}
+
+.black{
+    color: #fff;
+    background-color: #2e2c2d;
+}
+.black:hover{
+    background-color: #393838;
+}
+.white{
+    color: #000000;
+    background-color: #fff;
+}
+.white:hover{
+    background-color: $white-hover;
+}
