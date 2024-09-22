@@ -3,7 +3,7 @@
     width: 100%;
     z-index: 999;
 
-    &__row {
+    &__content {
         height: 60px;
         width: 1280px;
         display: flex;
@@ -11,7 +11,7 @@
         align-items: center;
         justify-content: space-between;
 
-        &__part {
+        &__nav {
             display: flex;
             text-align: center;
             align-items: center;
@@ -31,25 +31,23 @@
                     align-items: center;
 
                     li a {
-                        color: #cfcbcb;
-                        transition: 0.2s linear;
+                        color: $grey-color;
+                        transition: $duration linear;
                         font-size: 16px;
-                        cursor: pointer;
 
                         &:hover {
-                            color: #ffffff;
+                            color: $white-color;
                         }
                     }
                     .active {
-                        color: #ffffff !important;
+                        color: $white-color !important;
                         text-decoration: underline;
                         text-underline-offset: 4px;
                     }
                 }
             }
-
-            &__buttons {
-                display: inherit;
+            .header__buttons {
+                display: flex;
                 gap: 15px;
             }
         }

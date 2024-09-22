@@ -5,8 +5,8 @@ const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="container">
-                <div className="header__row">
-                    <div className="header__row__part">
+                <div className="header__content">
+                    <div className="header__content__nav">
                         <Link to="/">
                             <h1>AniLand</h1>
                         </Link>
@@ -47,9 +47,9 @@ const Header: React.FC = () => {
                             </ul>
                         </nav>
                     </div>
-                    <div className="header__row__part">
+                    <div className="header__content__nav">
                         <Search />
-                        <div className="header__row__part__buttons">
+                        <div className="header__buttons">
                             <button className="btn white">Войти</button>
                             <button className="btn black">Регистрация</button>
                         </div>

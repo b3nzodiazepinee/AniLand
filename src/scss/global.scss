@@ -2,16 +2,55 @@
 
 * {
     font-family: "Roboto", sans-serif;
-    color: $main-color;
-    background-color: $main-bg-color;
     font-size: 14px;
     font-weight: 400;
+    color: $white-color;
 }
 
+body {
+    background-color: $main-bg-color;
+}
 .container {
     max-width: 1280px;
     margin: 0 auto;
 }
+
+.btn {
+    font-weight: 500;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 35px;
+    transition: $duration linear;
+}
+
+.black {
+    background-color: $dark-color;
+}
+.black:hover {
+    background-color: $dark-color--hover;
+}
+
+.white {
+    color: $black-color;
+    background-color: $white-color;
+}
+.white:hover {
+    background-color: $white-color--hover;
+}
+
+.btn-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    img{
+        width: 16px;
+        height: 16px;
+    }
+}
+
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -21,10 +60,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #2e2c2d;
+    background-color: $dark-color;
     border-radius: 9em;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #a6a6a6;
+    background-color: $grey-color;
 }

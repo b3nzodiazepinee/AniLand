@@ -1,8 +1,7 @@
 .search {
-    position: relative;
     display: flex;
     margin-right: 40px;
-    border: 1px solid #3f3e3e;
+    border: 1px solid $border-color;
     border-radius: 10px;
     width: 320px;
     align-items: center;
@@ -15,30 +14,30 @@
     }
 
     &:not(:focus-within):hover {
-        outline: 1px solid #3f3e3e;
+        outline: 1px solid $border-color;
     }
 
     input {
         height: 32px;
         padding-left: 15px;
         padding-right: 15px;
-        color: #cfcbcb;
+        color: $white-color;
         font-size: 14px;
         width: 320px;
         border-radius: 10px;
         text-indent: 25px;
 
         &:focus {
-            outline: 2px solid #cfcbcb !important;
+            outline: 2px solid $light-grey-color !important;
             outline-offset: 0 !important;
         }
 
         &::-moz-placeholder {
-            color: #a6a6a6;
+            color: $grey-color;
         }
 
         &::-webkit-input-placeholder {
-            color: #a6a6a6;
+            color: $grey-color;
         }
     }
 }
