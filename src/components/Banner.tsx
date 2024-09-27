@@ -1,16 +1,15 @@
 import { useState, useEffect, useCallback } from "react";
 import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../redux/store";
+import { useAppDispatch } from "../redux/store";
 import { Link } from "react-router-dom";
-import { fetchBanner } from "../redux/slices/bannerSlice";
+import { fetchBanner } from "../redux/banner/slice";
+import { bannerSelector } from "../redux/banner/selectors";
 
-const Banner: React.FC = () => {
+export const Banner: React.FC = () => {
     const dispatch = useAppDispatch();
-    const [sound, setSound] = useState(false);
+    const { item, status } = useSelector(bannerSelector);
 
-    const { item, status } = useSelector(
-        (state: RootState) => state.bannerSlice
-    );
+    const [sound, setSound] = useState(false);
 
     const getAnime = async () => {
         dispatch(fetchBanner("title?id=9601&filter=names.ru,description"));
@@ -38,9 +37,9 @@ const Banner: React.FC = () => {
                         <div className="banner__shadow__bottom" />
                     </div>
                     <div className="header__shadow" />
-                    <video autoPlay playsInline loop muted={!sound}>
+                    {/* <video autoPlay playsInline loop muted={!sound}>
                         <source type="video/mp4" src="/video/opening.mp4" />
-                    </video>
+                    </video> */}
                     <div className="banner__content">
                         <div>
                             <h2>{item.names.ru}</h2>
@@ -70,5 +69,3 @@ const Banner: React.FC = () => {
         </>
     );
 };
-
-export default Banner;

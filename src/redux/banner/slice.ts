@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import { StatusLoading, Banner, BannerSliceState } from "../types";
+import { StatusLoading } from "../globalTypes";
+import { Banner, BannerSliceState } from "./types";
 
 export const fetchBanner = createAsyncThunk(
     "banner/fetchBannerStatus",
@@ -9,7 +10,6 @@ export const fetchBanner = createAsyncThunk(
             const res = await axios.get<Banner>(
                 `https://api.anilibria.tv/v3/${apiUrl}`
             );
-            console.log("API response:", res.data);
             return res.data as Banner;
         } catch (error) {
             return rejectWithValue(error);
@@ -21,23 +21,17 @@ const initialState: BannerSliceState = {
     item: {
         id: 0,
         names: {
-            ru: "", 
-            en: "", 
-            alternative: null,
+            ru: "",
         },
         description: "",
     },
     status: StatusLoading.LOADING,
-};
+};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 const bannerSlice = createSlice({
     name: "banner",
     initialState,
-    reducers: {
-        // setItems(state, action) {
-        //     state.item = action.payload;
-        // },
-    },
+    reducers: {},
     extraReducers: (builder) => {
         builder
             .addCase(fetchBanner.pending, (state) => {
@@ -52,16 +46,12 @@ const bannerSlice = createSlice({
                 state.item = {
                     id: 0,
                     names: {
-                        ru: "",            // Значение по умолчанию
-                        en: "",            // Значение по умолчанию
-                        alternative: null, // Значение по умолчанию
+                        ru: "",
                     },
                     description: "",
                 };
             });
     },
 });
-
-// export const { setItems } = bannerSlice.actions;
 
 export default bannerSlice.reducer;

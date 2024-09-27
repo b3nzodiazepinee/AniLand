@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-const Search: React.FC = () => {
+export const Search: React.FC = () => {
     const [loupeShow, setLoupeShow] = useState(false);
     const [textIndent, setTextIndent] = useState("25px");
     const [isActive, setIsActive] = useState(false);
@@ -73,5 +73,3 @@ const Search: React.FC = () => {
         </div>
     );
 };
-
-export default Search;

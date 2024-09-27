@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import { Anime, AnimeSliceState, StatusLoading } from "../types";
+import { Anime, AnimeSliceState } from "./types";
+import { StatusLoading } from "../globalTypes";
 
 export const fetchAnime = createAsyncThunk(
     "anime/fetchAnimeStatus",

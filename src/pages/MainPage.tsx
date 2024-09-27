@@ -1,12 +1,11 @@
-import Header from "../components/Header";
-import Banner from "../components/Banner";
+import { Header, Banner, SliderBlock } from "../components";
 
 const MainPage: React.FC = () => {
     return (
         <>
             <Header />
             <Banner />
-            <div>MainPage</div>
+            <SliderBlock />
         </>
     );
 };

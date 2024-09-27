@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
-import Search from "./Search";
-
-const Header: React.FC = () => {
+import { Search } from "./index";
+export const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="container">
@@ -59,5 +58,3 @@ const Header: React.FC = () => {
         </header>
     );
 };
-
-export default Header;

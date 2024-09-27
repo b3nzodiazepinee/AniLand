@@ -1,13 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
-import animeSlice from "./slices/animeSlice";
-import bannerSlice from "./slices/bannerSlice";
-
+import animeSlice from "./anime/slice";
+import bannerSlice from "./banner/slice";
+import sliderSlice from "./Slider/slice";
 
 export const store = configureStore({
     reducer: {
         animeSlice,
         bannerSlice,
+        sliderSlice,
     },
 });
 
