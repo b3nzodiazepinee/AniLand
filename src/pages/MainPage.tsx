@@ -1,4 +1,4 @@
-import { Header, Banner, SliderBlock } from "../components";
+import { Header, Banner, SliderBlock, Footer } from "../components";
 
 const MainPage: React.FC = () => {
     return (
@@ -6,6 +6,7 @@ const MainPage: React.FC = () => {
             <Header />
             <Banner />
             <SliderBlock />
+            <Footer />
         </>
     );
 };
