@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Card as CardT } from "../redux/Slider/types";
+import { Card as CardT } from "../redux/slider/types";
 
 interface CardProps {
     anime: CardT;
@@ -14,7 +14,7 @@ export const Card: React.FC<CardProps> = ({ anime }: { anime: CardT }) => {
                 }}
             >
                 <img
-                    src={"https://anilibria.tv" + anime.posters.original.url}
+                    src={"https://anilibria.tv" + anime.posters.original?.url}
                 />
                 <div className="card__content">
                     <h2>

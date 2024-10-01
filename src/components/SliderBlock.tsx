@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { fetchAnimeCards } from "../redux/Slider/slice";
+import { fetchAnimeCards } from "../redux/slider/slice";
 import { useAppDispatch } from "../redux/store";
-import { sliderSelector } from "../redux/Slider/selectors";
+import { sliderSelector } from "../redux/slider/selectors";
 import { SliderFC } from "./Slider";
 
 export const SliderBlock: React.FC = () => {
@@ -12,35 +12,35 @@ export const SliderBlock: React.FC = () => {
     const getCards = () => {
         dispatch(
             fetchAnimeCards({
-                apiUrl: "title/changes?filter=id,code,posters.original,names.ru,season.year,genres[0]&limit=36",
+                apiUrl: `title/search/advanced?simple_query=season.year==2024&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=changed&sort_direction=1&limit=36`,
                 sliderName: "newAnimeCards",
             })
         );
 
         dispatch(
             fetchAnimeCards({
-                apiUrl: "title/updates?filter=id,code,posters.original,names.ru,season.year,genres[0]&limit=36",
+                apiUrl: `title/search/advanced?simple_query=season.year==2024&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=updated&sort_direction=1&limit=36`,
                 sliderName: "newSeriesCards",
             })
         );
 
         dispatch(
             fetchAnimeCards({
-                apiUrl: `https://api.anilibria.tv/v3/title/search/advanced?simple_query=status.code==2&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=torrents.list.downloads&sort_direction=1&limit=36`,
+                apiUrl: `title/search/advanced?simple_query=status.code==2&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=torrents.list.downloads&sort_direction=1&limit=36`,
                 sliderName: "popularAnimeCards",
             })
         );
 
         dispatch(
             fetchAnimeCards({
-                apiUrl: `https://api.anilibria.tv/v3/title/search/advanced?simple_query=status.code==2&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=in_favorites&sort_direction=1&limit=36`,
+                apiUrl: `title/search/advanced?simple_query=status.code==2&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=in_favorites&sort_direction=1&limit=36`,
                 sliderName: "bestRatingCards",
             })
         );
 
         dispatch(
             fetchAnimeCards({
-                apiUrl: `https://api.anilibria.tv/v3/title/search/advanced?simple_query=type.string==MOVIE&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=in_favorites&sort_direction=1&limit=36`,
+                apiUrl: `title/search/advanced?simple_query=type.string==MOVIE&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=in_favorites&sort_direction=1&limit=36`,
                 sliderName: "moviesCards",
             })
         );

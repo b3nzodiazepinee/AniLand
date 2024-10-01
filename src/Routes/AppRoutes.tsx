@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import MainPage from "../pages/MainPage";
+import { AnimePage } from "../pages/AnimePage";
 
 const ErrorPage = lazy(() => import("../pages/ErrorPage"));
 
@@ -8,6 +9,7 @@ const AppRoutes: React.FC = () => {
     return (
         <Routes>
             <Route path="/" element={<MainPage />} />
+            <Route path="/anime/:code" element={<AnimePage />} />
             <Route
                 path="*"
                 element={

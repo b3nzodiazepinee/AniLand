@@ -1,0 +1,116 @@
+.animePage {
+    .mainSection {
+        padding-top: 50px;
+        display: flex;
+
+        & > img {
+            min-width: 230px;
+            height: 330px;
+            border-radius: 15px;
+            box-shadow: 1.5px 1px 2px 0 rgba(39, 39, 40, 0.3),
+                0 2px 6px 2px rgba(39, 39, 40, 0.15);
+        }
+
+        &__info {
+            padding-left: 50px;
+            display: grid;
+            width: 100%;
+
+            h1 {
+                margin-top: 10px;
+                font-weight: 600;
+                font-size: 30px;
+                padding-bottom: 10px;
+                width: 800px;
+            }
+
+            &__btns {
+                display: flex;
+                align-self: flex-end;
+
+                
+
+                &__favorites {
+                    width: 35px;
+                    height: 35px;
+                    background-color: $dark-color;
+                    border-radius: 6px;
+                    padding-top: 4px;
+                    margin-left: 15px;
+                    transition: $duration linear;
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    &:hover {
+                        background-color: $dark-color--hover;
+                    }
+                }
+
+                &__select__list {
+                    background-color: $dark-color;
+                    margin-left: 15px;
+                    font-weight: 400;
+
+                    &:hover {
+                        background-color: $dark-color--hover;
+                    }
+                }
+            }
+        }
+    }
+
+    .add__to__collection {
+        margin-top: 25px;
+        width: 230px;
+    }
+
+    .section__info {
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        &__about {
+            width: 30%;
+
+            table {
+                width: 90%;
+
+                tbody tr {
+                    display: flex;
+                    padding: 8px 0;
+                    align-items: center;
+
+                    .attribute {
+                        width: 55%;
+                        color: #ccc;
+                    }
+
+                    .value {
+                        width: 45%;
+                        line-height: 1.3;
+                    }
+                }
+            }
+        }
+
+        &__description {
+            width: 70%;
+
+            p {
+                font-size: 15px;
+                color: #dfdddd;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: 500;
+        padding-bottom: 25px;
+    }
+}

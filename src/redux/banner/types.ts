@@ -6,7 +6,7 @@ export interface BannerSliceState {
     status: StatusLoading;
 }
 
-export type Banner = {
+export interface Banner {
     id: number;
     names: Names;
     description: string;

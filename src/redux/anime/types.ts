@@ -24,10 +24,10 @@ export interface Anime {
     player?: Player;
 }
 
-type Type = {
+export type Type = {
     full_string?: string;
     string?: string;
-    episodes?: string | null;
+    episodes?: number | null;
     length?: number;
 };
 
@@ -40,7 +40,7 @@ export type Names = {
 export interface Posters {
     small?: PosterImage;
     medium?: PosterImage;
-    original: PosterImage;
+    original?: PosterImage;
 }
 
 type PosterImage = {
@@ -49,7 +49,7 @@ type PosterImage = {
 
 export type Genre = string;
 
-type Status = {
+export type Status = {
     string?: string;
     code?: number;
 };
@@ -61,31 +61,31 @@ export type Season = {
     week_day?: number;
 };
 
-type HLSLinks = {
+export type HLSLinks = {
     fhd: string;
     hd: string;
     sd: string;
 };
 
 interface Episode {
-    episode: number;
-    name: string | null;
-    preview: string | null;
-    hls: HLSLinks;
+    episode?: number;
+    name?: string | null;
+    preview?: string | null;
+    hls?: HLSLinks;
 }
 
 interface EpisodeList {
     [key: string]: Episode;
 }
 
-type EpisodesInfo = {
-    first: number;
-    last: number;
-    string: string;
+export type EpisodesInfo = {
+    first?: number;
+    last?: number;
+    string?: string;
 };
 
-type Player = {
-    host: string;
-    episodes: EpisodesInfo;
-    list: EpisodeList;
+export type Player = {
+    host?: string;
+    episodes?: EpisodesInfo;
+    list?: EpisodeList;
 };

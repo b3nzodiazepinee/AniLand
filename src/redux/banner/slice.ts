@@ -43,13 +43,7 @@ const bannerSlice = createSlice({
             })
             .addCase(fetchBanner.rejected, (state) => {
                 state.status = StatusLoading.ERROR;
-                state.item = {
-                    id: 0,
-                    names: {
-                        ru: "",
-                    },
-                    description: "",
-                };
+                state.item = initialState.item
             });
     },
 });

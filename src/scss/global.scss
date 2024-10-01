@@ -24,6 +24,25 @@ body {
     transition: $duration linear;
 }
 
+.btn__with__img {
+    display: flex;
+    transition: 0.15s linear;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 15px;
+        padding-left: 6px;
+        color: inherit;
+        font-weight: inherit;
+    }
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
 .black {
     background-color: $dark-color;
 }
@@ -39,18 +58,17 @@ body {
     background-color: $white-color--hover;
 }
 
-.btn-img{
+.btn-img {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 
-    img{
+    img {
         width: 16px;
         height: 16px;
     }
 }
-
 
 ::-webkit-scrollbar {
     width: 8px;

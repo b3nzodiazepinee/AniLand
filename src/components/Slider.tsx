@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Card } from "./Card";
-import { Card as CardT } from "../redux/Slider/types";
+import { Card as CardT } from "../redux/slider/types";
 
 interface SliderFCProps {
     cards: CardT[];
