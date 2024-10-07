@@ -1,0 +1,16 @@
+.player__menu {
+    > h2 {
+        height: 50px;
+        font-size: 22px;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    }
+
+    &__episodes {
+        width: 428px;
+        height: 460px;
+        overflow: auto;
+    }
+}

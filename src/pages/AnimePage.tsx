@@ -1,6 +1,6 @@
 import { Header, AnimePageMainBlock } from "../components/index";
 
-export const AnimePage: React.FC = () => {
+const AnimePage: React.FC = () => {
     return (
         <>
             <Header />
@@ -8,3 +8,5 @@ export const AnimePage: React.FC = () => {
         </>
     );
 };
+
+export default AnimePage;

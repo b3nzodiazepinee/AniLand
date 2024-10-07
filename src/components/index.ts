@@ -5,3 +5,6 @@ export * from "./Slider";
 export * from "./SliderBlock";
 export * from "./Footer";
 export * from "./AnimePageMainBlock";
+export * from "./Player";
+export * from "./PlayerMenu";
+export * from "./PlayerEpisode";

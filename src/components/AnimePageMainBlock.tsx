@@ -13,7 +13,7 @@ export const AnimePageMainBlock: React.FC = () => {
     const getAnimeInfo = () => {
         dispatch(
             fetchAnimeInfo(
-                `https://api.anilibria.tv/v3/title?code=${code}&filter=code,names.ru,type.string,type.episodes,type.length,genres,status.string,posters.original.url,description,season.string,season.year,player.episodes.last`
+                `title?code=${code}&filter=code,names.ru,type.string,type.episodes,type.length,genres,status.string,posters.original.url,description,season.string,season.year,player.episodes.last`
             )
         );
     };

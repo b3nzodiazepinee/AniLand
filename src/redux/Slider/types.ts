@@ -1,4 +1,4 @@
-import { Genre, Names, Posters, Season } from "../anime/types";
+import { Genre, Names, Posters, Season } from "../globalTypes";
 import { StatusLoading } from "../globalTypes";
 
 export interface CardSliceState {
@@ -25,9 +25,9 @@ export interface Card {
     genres: Genre[];
 }
 
-export type SliderName = 
-  | "newAnimeCards" 
-  | "newSeriesCards" 
-  | "popularAnimeCards" 
-  | "bestRatingCards" 
-  | "moviesCards";
+export type SliderName =
+    | "newAnimeCards"
+    | "newSeriesCards"
+    | "popularAnimeCards"
+    | "bestRatingCards"
+    | "moviesCards";

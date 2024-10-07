@@ -5,7 +5,7 @@ interface CardProps {
     anime: CardT;
 }
 
-export const Card: React.FC<CardProps> = ({ anime }: { anime: CardT }) => {
+export const Card: React.FC<CardProps> = ({ anime }) => {
     return (
         <div className="card">
             <Link

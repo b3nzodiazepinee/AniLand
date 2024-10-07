@@ -8,7 +8,7 @@ import { SliderFC } from "./Slider";
 export const SliderBlock: React.FC = () => {
     const dispatch = useAppDispatch();
     const sliderCards = useSelector(sliderSelector);
-
+    
     const getCards = () => {
         dispatch(
             fetchAnimeCards({

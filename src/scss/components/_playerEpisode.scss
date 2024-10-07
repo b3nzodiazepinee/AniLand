@@ -1,0 +1,40 @@
+/* Эпизод */
+
+.episode {
+    width: 420px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    transition: $duration linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $dark-color--hover;
+    }
+
+    &__img {
+        align-items: center;
+        width: 160px;
+        height: 95px;
+        background: $dark-color;
+        border-radius: 8px;
+    }
+
+    span {
+        padding-left: 15px;
+        width: 245px;
+
+        h2 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+        h3 {
+            padding-top: 5px;
+            color: $white-color--hover;
+        }
+    }
+
+    &__selected {
+        background-color: rgb(77, 76, 76) !important;
+    }
+}

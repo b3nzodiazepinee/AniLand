@@ -1,4 +1,4 @@
-import { Names } from "../anime/types";
+import { Names } from "../globalTypes";
 import { StatusLoading } from "../globalTypes";
 
 export interface BannerSliceState {
