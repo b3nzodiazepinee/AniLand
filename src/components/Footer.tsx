@@ -4,7 +4,7 @@ export const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <div className="footer__line" />
-            <div className="container footer__container">
+            <div className="footer__container">
                 <div className="footer__container__elements">
                     <h2>AniLand</h2>
                     <table>
@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
                                 </g>
                             </svg>
                         </a>
-                        <a href="https://github.com/quincy228" target="_blank">
+                        <a href="https://github.com/b3nzodiazepinee" target="_blank">
                             <svg
                                 width="40px"
                                 height="40px"

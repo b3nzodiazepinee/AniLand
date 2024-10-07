@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { Player, PlayerMenu, Header } from "../components";
+import { Player, PlayerMenu } from "../components";
 import { fetchPlayer } from "../redux/player/slice";
 import { useAppDispatch } from "../redux/store";
 import { playerSelector } from "../redux/player/selectors";
@@ -29,7 +29,6 @@ const PlayerPage = () => {
 
     return (
         <>
-            <Header />
             <div
                 style={{
                     display: "flex",

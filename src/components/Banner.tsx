@@ -31,15 +31,12 @@ export const Banner: React.FC = () => {
                 <div>Загрузка Баннера</div>
             ) : (
                 <section className="banner">
-                    <div className="banner__shadow">
-                        {/* <div className="banner__shadow__left" />
+                    {/* <div className="banner__shadow__left" />
                         <div className="banner__shadow__right" /> */}
-                        <div className="banner__shadow__bottom" />
-                    </div>
-                    <div className="header__shadow" />
-                    {/* <video autoPlay playsInline loop muted={!sound}>
+                    <div className="banner__shadow__bottom" />
+                    <video autoPlay playsInline loop muted={!sound}>
                         <source type="video/mp4" src="/video/opening.mp4" />
-                    </video> */}
+                    </video>
                     <div className="banner__content">
                         <div>
                             <h2>{item.names.ru}</h2>
@@ -49,7 +46,7 @@ export const Banner: React.FC = () => {
                                     ? item.description.slice(0, 250) + "..."
                                     : item.description}
                             </p>
-                            <Link to="/">
+                            <Link to="/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-3rd-season">
                                 <button className="btn white btn-img">
                                     <img src="./img/play.svg" alt="Play" />
                                     <span>Смотреть</span>

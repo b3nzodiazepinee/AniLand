@@ -8,7 +8,7 @@ import { SliderFC } from "./Slider";
 export const SliderBlock: React.FC = () => {
     const dispatch = useAppDispatch();
     const sliderCards = useSelector(sliderSelector);
-    
+
     const getCards = () => {
         dispatch(
             fetchAnimeCards({
@@ -52,42 +52,40 @@ export const SliderBlock: React.FC = () => {
 
     return (
         <div>
-            <div className="container">
-                <div className="slider__block">
-                    <h2>Новые аниме</h2>
-                    <SliderFC
-                        cards={sliderCards.newAnimeCards}
-                        status={sliderCards.status.newAnimeCards}
-                    />
-                </div>
-                <div className="slider__block">
-                    <h2>Новые серии</h2>
-                    <SliderFC
-                        cards={sliderCards.newSeriesCards}
-                        status={sliderCards.status.newSeriesCards}
-                    />
-                </div>
-                <div className="slider__block">
-                    <h2>Популярное</h2>
-                    <SliderFC
-                        cards={sliderCards.popularAnimeCards}
-                        status={sliderCards.status.popularAnimeCards}
-                    />
-                </div>
-                <div className="slider__block">
-                    <h2>Лучший рейтинг</h2>
-                    <SliderFC
-                        cards={sliderCards.bestRatingCards}
-                        status={sliderCards.status.bestRatingCards}
-                    />
-                </div>
-                <div className="slider__block">
-                    <h2>Фильмы</h2>
-                    <SliderFC
-                        cards={sliderCards.moviesCards}
-                        status={sliderCards.status.moviesCards}
-                    />
-                </div>
+            <div className="slider__block">
+                <h2>Новые аниме</h2>
+                <SliderFC
+                    cards={sliderCards.newAnimeCards}
+                    status={sliderCards.status.newAnimeCards}
+                />
+            </div>
+            <div className="slider__block">
+                <h2>Новые серии</h2>
+                <SliderFC
+                    cards={sliderCards.newSeriesCards}
+                    status={sliderCards.status.newSeriesCards}
+                />
+            </div>
+            <div className="slider__block">
+                <h2>Популярное</h2>
+                <SliderFC
+                    cards={sliderCards.popularAnimeCards}
+                    status={sliderCards.status.popularAnimeCards}
+                />
+            </div>
+            <div className="slider__block">
+                <h2>Лучший рейтинг</h2>
+                <SliderFC
+                    cards={sliderCards.bestRatingCards}
+                    status={sliderCards.status.bestRatingCards}
+                />
+            </div>
+            <div className="slider__block">
+                <h2>Фильмы</h2>
+                <SliderFC
+                    cards={sliderCards.moviesCards}
+                    status={sliderCards.status.moviesCards}
+                />
             </div>
         </div>
     );

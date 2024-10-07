@@ -29,7 +29,7 @@ export const AnimePageMainBlock: React.FC = () => {
             ) : status === "loading" ? (
                 <div>Загрузка</div>
             ) : (
-                <section className="container animePage">
+                <section className="animePage">
                     <div className="mainSection">
                         <img
                             src={
