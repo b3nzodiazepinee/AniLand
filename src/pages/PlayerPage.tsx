@@ -33,9 +33,9 @@ const PlayerPage = () => {
                 style={{
                     display: "flex",
                     justifyContent: "space-between",
-                    paddingTop: "70px",
+                    paddingTop: "50px",
                 }}
-                className="container"
+           
             >
                 <Player
                     player={player}

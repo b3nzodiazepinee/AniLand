@@ -20,7 +20,7 @@ export const AnimePageMainBlock: React.FC = () => {
 
     useEffect(() => {
         getAnimeInfo();
-    }, []);
+    }, [code]);
 
     return (
         <>
