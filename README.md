@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# Сайт по просмотру аниме
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Веб-сайт позволяет пользователям смотреть любимые аниме-сериалы и фильмы разных жанров. Пользователи могут наслаждаться потоковым воспроизведением, выбирать качество видео, находить новые аниме через удобный поиск и листать подборки популярных аниме на главной странице.
 
-Currently, two official plugins are available:
+## Краткий обзор сайта
+## MainPage
+![Снимок экрана 2024-10-10 175143](https://github.com/user-attachments/assets/d90f79db-e4f2-4974-952b-90c5088ae57c)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Снимок экрана 2024-10-10 175249](https://github.com/user-attachments/assets/5fdedaf6-4f28-4304-970b-6db2e27c1093)
 
-## Expanding the ESLint configuration
+![Снимок экрана 2024-10-10 175258](https://github.com/user-attachments/assets/06ebefcd-f00b-4628-884c-fa12ccb34cf0)
+## AnimePage
+![Снимок экрана 2024-10-11 104108](https://github.com/user-attachments/assets/f93e24ce-f786-4362-9551-b2b2d5b9c4de)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## PlayerPage
+![Снимок экрана 2024-10-10 181027](https://github.com/user-attachments/assets/6d751b0c-fc62-4c7c-95b5-9434bac9afcb)
 
-- Configure the top-level `parserOptions` property like this:
+## Search
+![Снимок экрана 2024-10-11 104453](https://github.com/user-attachments/assets/d9229b1b-8a27-4083-a997-98de3940f6c5)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tech Stack
+- HTML
+- SCSS
+- React
+- TypeScript
+- Redux Toolkit
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<h2>Статус проекта</h2>
+<h3>⚠️ Сайт находится в разработке. Некоторые функции могут быть недоступны.</h3>
