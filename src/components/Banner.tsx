@@ -31,12 +31,12 @@ export const Banner: React.FC = () => {
                 <div>Загрузка Баннера</div>
             ) : (
                 <section className="banner">
-                    {/* <div className="banner__shadow__left" />
-                        <div className="banner__shadow__right" /> */}
+                    <div className="banner__shadow__left" />
+                        <div className="banner__shadow__right" />
                     <div className="banner__shadow__bottom" />
-                    {/* <video autoPlay playsInline loop muted={!sound}>
+                    <video autoPlay playsInline loop muted={!sound}>
                         <source type="video/mp4" src="/video/opening.mp4" />
-                    </video> */}
+                    </video>
                     <div className="banner__content">
                         <div>
                             <h2>{item.names.ru}</h2>

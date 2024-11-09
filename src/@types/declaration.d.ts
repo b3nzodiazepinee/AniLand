@@ -5,3 +5,4 @@ declare module "*.module.scss" {
 
 declare module 'react-slick';
 declare module 'plyr-react';
+declare module 'react-transition-group';

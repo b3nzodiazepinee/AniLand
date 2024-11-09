@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Card } from "./Card";
+import { Card } from "./ui/Card";
 import { Card as CardT } from "../redux/slider/types";
 
 interface SliderFCProps {
@@ -9,13 +9,7 @@ interface SliderFCProps {
     status: string;
 }
 
-export const SliderFC: React.FC<SliderFCProps> = ({
-    cards,
-    status,
-}: {
-    cards: CardT[];
-    status: string;
-}) => {
+export const SliderFC: React.FC<SliderFCProps> = ({ cards, status }) => {
     const groupCards: CardT[][] = [];
     for (let i = 0; i < cards.length; i += 6) {
         groupCards.push(cards.slice(i, i + 6));

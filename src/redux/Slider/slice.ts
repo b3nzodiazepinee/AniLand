@@ -14,8 +14,9 @@ export const fetchAnimeCards = createAsyncThunk(
         sliderName: SliderName;
     }) => {
         const res = await axios.get<{ list: Card[] }>(
-            `https://api.anilibria.tv/v3/${apiUrl}`
+            `https://api.anilibria.tv/v3/${apiUrl}&limit=30`
         );
+        console.log(res.data.list);
         return { data: res.data.list as Card[], sliderName };
     }
 );

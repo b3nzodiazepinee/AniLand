@@ -12,35 +12,35 @@ export const SliderBlock: React.FC = () => {
     const getCards = () => {
         dispatch(
             fetchAnimeCards({
-                apiUrl: `title/search/advanced?simple_query=season.year==2024&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=changed&sort_direction=1&limit=36`,
+                apiUrl: `title/changes?filter=id,code,posters.original,names.ru,season.year,genres[0]`,
                 sliderName: "newAnimeCards",
             })
         );
 
         dispatch(
             fetchAnimeCards({
-                apiUrl: `title/search/advanced?simple_query=season.year==2024&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=updated&sort_direction=1&limit=36`,
+                apiUrl: `title/search/advanced?simple_query=season.year==2024&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=updated&sort_direction=1`,
                 sliderName: "newSeriesCards",
             })
         );
 
         dispatch(
             fetchAnimeCards({
-                apiUrl: `title/search/advanced?simple_query=status.code==2&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=torrents.list.downloads&sort_direction=1&limit=36`,
+                apiUrl: `title/search/advanced?simple_query=status.code==2&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=torrents.list.downloads&sort_direction=1`,
                 sliderName: "popularAnimeCards",
             })
         );
 
         dispatch(
             fetchAnimeCards({
-                apiUrl: `title/search/advanced?simple_query=status.code==2&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=in_favorites&sort_direction=1&limit=36`,
+                apiUrl: `title/search/advanced?simple_query=status.code==2&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=in_favorites&sort_direction=1`,
                 sliderName: "bestRatingCards",
             })
         );
 
         dispatch(
             fetchAnimeCards({
-                apiUrl: `title/search/advanced?simple_query=type.string==MOVIE&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=in_favorites&sort_direction=1&limit=36`,
+                apiUrl: `title/search/advanced?simple_query=type.string==MOVIE&filter=id,code,posters.original,names.ru,season.year,genres[0]&order_by=in_favorites&sort_direction=1`,
                 sliderName: "moviesCards",
             })
         );
@@ -51,7 +51,7 @@ export const SliderBlock: React.FC = () => {
     }, []);
 
     return (
-        <div>
+        <>
             <div className="slider__block">
                 <h2>Новые аниме</h2>
                 <SliderFC
@@ -87,6 +87,6 @@ export const SliderBlock: React.FC = () => {
                     status={sliderCards.status.moviesCards}
                 />
             </div>
-        </div>
+        </>
     );
 };

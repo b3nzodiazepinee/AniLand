@@ -1,7 +1,7 @@
-import { Episode } from "../redux/player/types";
-import { useAppDispatch } from "../redux/store";
-import { setEpisode } from "../redux/player/slice";
-import { playerSelector } from "../redux/player/selectors";
+import { Episode } from "../../redux/player/types";
+import { useAppDispatch } from "../../redux/store";
+import { setEpisode } from "../../redux/player/slice";
+import { playerSelector } from "../../redux/player/selectors";
 import { useSelector } from "react-redux";
 
 interface PlayerEpisodeProps {

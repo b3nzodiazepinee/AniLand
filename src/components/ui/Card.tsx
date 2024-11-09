@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Card as CardT } from "../redux/slider/types";
+import { Card as CardT } from "../../redux/slider/types";
 
 interface CardProps {
     anime: CardT;

@@ -1,8 +1,7 @@
-@import "./reset.scss";
 @import "./variables";
+@import "./reset.scss";
 @import "./global.scss";
 
-@import "./pages/mainPage";
 @import "./pages/errorPage";
 @import "./components/header";
 @import "./components/search";
@@ -14,4 +13,7 @@
 @import "./components/player";
 @import "./components/playerEpisode";
 @import "./components/playerMenu";
-@import "./components/SearchResult.scss";
+@import "./components/searchResult";
+@import "./components/Modal/wrapper";
+@import "./components/Modal/authentication";
+

@@ -1,0 +1,72 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.25s;
+    z-index: 999;
+    background-color: rgb(0, 0, 0, 0.75);
+
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100%;
+
+        &__content {
+            position: relative;
+            width: 470px;
+            background-color: $main-bg-color;
+            border-radius: 8px;
+            border: 2px solid $border-color;
+            padding: 50px 70px 50px 70px;
+
+            > button {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                    z-index: 1;
+                }
+
+                &:hover {
+                    background-color: $border-color;
+                }
+            }
+        }
+    }
+
+    &--entering,
+    &--entered {
+        opacity: 1;
+    }
+
+    &--entering &--content,
+    &--entered &--content {
+        transform: translateY(0);
+    }
+
+    &--exiting,
+    &--exited {
+        opacity: 0;
+    }
+
+    &--exiting &--content,
+    &--exited &--content {
+        transform: translate(-50px);
+    }
+}

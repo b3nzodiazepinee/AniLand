@@ -1,4 +1,4 @@
-import { PlayerEpisode } from "./PlayerEpisode";
+import { PlayerEpisode } from "./ui/PlayerEpisode";
 import { Episode } from "../redux/player/types";
 import { StatusLoading } from "../redux/globalTypes";
 

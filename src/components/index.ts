@@ -4,8 +4,10 @@ export * from "./Search";
 export * from "./SearchResult";
 export * from "./Slider";
 export * from "./SliderBlock";
-export * from "./Footer";
+export * from "./ui/Footer";
 export * from "./AnimePageMainBlock";
 export * from "./Player";
 export * from "./PlayerMenu";
-export * from "./PlayerEpisode";
+export * from "./ui/PlayerEpisode";
+export * from "./Modal"
+
