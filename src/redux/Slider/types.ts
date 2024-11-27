@@ -7,6 +7,13 @@ export interface CardSliceState {
     popularAnimeCards: Card[];
     bestRatingCards: Card[];
     moviesCards: Card[];
+    page: {
+        newAnimeCards: number;
+        newSeriesCards: number;
+        popularAnimeCards: number;
+        bestRatingCards: number;
+        moviesCards: number;
+    };
     status: {
         newAnimeCards: StatusLoading;
         newSeriesCards: StatusLoading;

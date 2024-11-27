@@ -88,3 +88,23 @@ body {
 }
 
 
+.custom-next-arrow,
+.custom-prev-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.custom-next-arrow {
+    right: 10px; /* Расположить справа */
+}
+
+.custom-prev-arrow {
+    left: 10px; /* Расположить слева */
+}
